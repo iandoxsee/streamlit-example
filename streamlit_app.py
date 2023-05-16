@@ -12,7 +12,7 @@ def fasta_to_amino_acid(fasta_seq, wild_type):
     t7_tag = "MGSSHHHHHHSSGLVPRGSHMASMTGGQQMGRGSEF"
 
     # Create a sequence record from the fasta sequence
-    seq_record = SeqIO.read(StringIO(fasta_seq), "fasta", alphabet=IUPAC.unambiguous_dna)
+    seq_record = SeqIO.read(StringIO(fasta_seq), "fasta")
 
     # Translate the nucleotide sequence to amino acid sequence
     amino_acid_seq = str(seq_record.seq.translate(to_stop=False))
