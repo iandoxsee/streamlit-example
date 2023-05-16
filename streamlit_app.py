@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from Bio import SeqIO
 from Bio.Seq import Seq
-from Bio.Alphabet import IUPAC
 from io import StringIO
 
 # Function to convert FASTA sequence to amino acid sequence
